@@ -41,10 +41,6 @@ configure(rootProject) {
 				into "./images/"
 				include '**'
 			}
-			from( "${rootDir}/docs/svg" ) {
-				into "./images/"
-				include 'legend-*.svg'
-			}
 		}
 		outputDir file("$buildDir/docs/asciidoc")
 		logDocuments = true
